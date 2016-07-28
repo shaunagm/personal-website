@@ -1,0 +1,46 @@
+<%namespace name="base" file="../base.html"/>
+${base.header()}
+
+<header>
+    <div class="small container">
+        <div class="row">
+            <div class="col-lg-12">
+                <span class="header-text">WelcomeBot</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section class="leaf-page" id="projectmisc">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <p class="blockquote">The image used on the projects page was created
+                by <a href="https://www.flickr.com/photos/firepile/438134633">Robin Zebrowski</a>
+                and is licensed <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.</p>
+                <p>WelcomeBot is a bot that greets newcomers to an IRC channel when no one else is paying
+                    attention. It has two main goals: first, to alert community members when someone new
+                    enters the room and says hello (either by using their nick in a response, or by sending
+                    a private message). Second, it helps the new person to feel welcome even when there's
+                    no one around, and provides more information to them about staying in touch.</p>
+
+                    <img class="img-responsive" src="{% static 'site/img/project_thumbs/welcomebot-example.png' %}" alt="">
+
+                <p>The WelcomeBot project also functions as a small, easily comprehensible project
+                    for newcomers to open source.  Over a half dozen people have made their first
+                    open source contributions to WelcomeBot.  The project repository includes a
+                    <a href="https://github.com/shaunagm/WelcomeBot/blob/master/docs/testing.md">detailed tutorial</a>
+                    for learning about automated testing using WelcomeBot.</p>
+
+                <p>You can learn more about WelcomeBot at the project's <a href="https://github.com/shaunagm/WelcomeBot">Github repo</a>
+                    or by reading through <a href="http://shaunagm.github.io/personal/bpug_2014.html#/">the slides</a> from a presentation I gave about it.</p>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+${base.footer()}

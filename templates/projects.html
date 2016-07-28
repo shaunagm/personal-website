@@ -1,0 +1,166 @@
+<%namespace name="base" file="base.html"/>
+${base.header()}
+
+<header>
+    <div class="small container">
+        <div class="row">
+            <div class="col-lg-12">
+                <span class="header-text">Projects</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section class="leaf-page">
+    <div class="container">
+        <div class="row">
+
+          <div class="projectFilter">
+
+              <a href="#" data-filter="*" class="current">All Projects</a>
+
+              <br />
+
+              <a href="#" data-filter=".programming">Programming</a> /
+              <a href="#" data-filter=".writing">Writing</a> /
+              <a href="#" data-filter=".teaching">Teaching</a> /
+              <a href="#" data-filter=".activism">Activism</a>
+
+              <br />
+
+              <a href="#" data-filter=".science">Science</a> /
+              <a href="#" data-filter=".history">History</a> /
+              <a href="#" data-filter=".foss">Free Culture</a>
+
+          </div>
+
+          <div class="projectContainer">
+
+                <div class="programming">
+                    <a href="${fullpath}projects/smalltalk.html">
+                        <div class="image-container">
+                            <img src="${fullpath}inc/img/project_thumbs/smalltalk.jpg" alt="Screenshot of Smalltalk website">
+                            <div class="after"><div class="textspan">Smalltalk</div></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="programming foss teaching">
+                    <a href="${fullpath}projects/welcomebot.html">
+                        <div class="image-container">
+                            <img src="${fullpath}inc/img/project_thumbs/welcomebot.png" alt="Picture of friendly robot">
+                            <div class="after"><div class="textspan">WelcomeBot</div></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="foss">
+                    <a href="${fullpath}projects/osrletter.html">
+                        <div class="image-container">
+                            <img src="${fullpath}inc/img/project_thumbs/osrletter.jpg" alt="Screenshot of letter text">
+                            <div class="after"><div class="textspan">Open Source Recommendation Letter</div></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="art">
+                    <a href="${fullpath}projects/bongardcards.html">
+                        <div class="image-container">
+                            <img src="${fullpath}inc/img/project_thumbs/bongardcards.jpg" alt="Picture of Bongard Cards">
+                            <div class="after"><div class="textspan">Bongard Cards</div></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="history science teaching">
+                    <a href="${fullpath}projects/eureka.html">
+                        <div class="image-container">
+                            <img src="${fullpath}inc/img/project_thumbs/eureka.jpg" alt="Picture of Eureka project">
+                            <div class="after"><div class="textspan">Eureka! Roleplaying Science History</div></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="activism programming teaching foss">
+                    <a href="${fullpath}projects/ogb.html">
+                        <div class="image-container">
+                            <img src="${fullpath}inc/img/project_thumbs/ogb.jpg" alt="Lady Liberty shining a light under the congressional dome">
+                            <div class="after"><div class="textspan">Open Government Boston</div></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="activism programming foss">
+                    <a href="${fullpath}projects/osc.html">
+                        <div class="image-container">
+                            <img src="${fullpath}inc/img/project_thumbs/osc3.jpg" alt="Lady Liberty shining a light under the congressional dome">
+                            <div class="after"><div class="textspan">Open Science Collaboration Blog</div></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="programming teaching">
+                    <a href="${fullpath}projects/littler.html">
+                        <div class="image-container">
+                            <img src="${fullpath}inc/img/project_thumbs/little-r.png" alt="Screenshot of The Little R'r Website">
+                            <div class="after"><div class="textspan">The Little R'r</div></div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="activism">
+                    <a href="${fullpath}projects/wwr.html">
+                        <div class="image-container">
+                            <img src="${fullpath}inc/img/project_thumbs/wwr.png" alt="Screenshot of When Women Refuse tumblr">
+                            <div class="after"><div class="textspan">When Women Refuse</div></div>
+                        </div>
+                    </a>
+                </div>
+
+          </div>
+
+
+        </div>
+     </div>
+</section>
+
+<script src="inc/js/isotope.pkgd.js"></script>
+
+<script>
+    jQuery(window).load(function(){
+
+        var $container = $('.projectContainer');
+        $container.isotope({
+            filter: '*',
+            animationOptions: {
+                duration: 900,
+                easing: 'linear',
+                queue: false
+            },
+            masonry: {
+                isFitWidth: true,
+                gutter: 20
+            }
+        });
+
+        jQuery('.projectFilter a').click(function(){
+            $('.projectFilter .current').removeClass('current');
+            $(this).addClass('current');
+
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
+                filter: selector,
+                animationOptions: {
+                    duration: 900,
+                    easing: 'linear',
+                    queue: false
+                }
+             });
+             return false;
+        });
+    });
+
+</script>
+
+${base.footer()}

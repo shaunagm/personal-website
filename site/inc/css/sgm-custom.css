@@ -1,0 +1,308 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+
+
+/* Definitions across all sites */
+
+h3 {
+	font-size: 32px;
+}
+
+h4 {
+	font-size: 26px;
+}
+
+.small-text {
+	font-size: 16px;
+}
+
+.padded-text {
+	padding: 15px 5px 0px 5px;
+}
+
+.clear-dot {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 5px 0px;
+}
+
+.blockquote {
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: .8em;
+}
+
+.carousel-inner > .item > img {
+	margin: 0 auto;
+}
+
+.carousel {
+	width: 650px;
+	margin: auto;
+}
+
+.carousel-control {
+	padding-top: 360px;
+}
+
+.carousel-control.left, .carousel-control.right {
+	background-image: none;
+}
+
+.carousel-caption {
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.9);
+}
+
+/* Definitions across all meta sites */
+
+.navbar-default {
+	background-color: #5E412F;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: #FFF;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active, a, a:hover,
+ a:focus, a:active, a.active {
+	color: #78C0A8;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: white;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	border-color: white;
+	background-color: #78C0A8;
+}
+
+header .header-text {
+	font-size: 3em;
+	text-transform: uppercase;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 700;
+}
+
+header .container {
+	padding-top: 120px;
+}
+
+header .container.small {
+	padding-top: 100px;
+	padding-bottom: 30px;
+}
+
+footer, footer .footer-above, footer .footer-below {
+	color: white;
+	background-color: #5E412F;
+}
+
+footer p {
+	font-size: 14px;
+}
+
+section {
+	color: #5E412F;
+	background: white;
+	font-size: 18px;
+}
+
+section a, section a:hover, section a:focus, section a:active {
+	color: #F07818;
+}
+
+section h2 {
+	padding-bottom: 20px;
+}
+
+section p.quote {
+	padding: 20px 40px 0px 40px;
+}
+
+section.leaf-page {
+	padding-top: 20px;
+}
+
+section.color-options-one {
+	color: white;
+	background: #78C0A8;
+}
+
+section.color-options-one a {
+	color: #5E412F;
+}
+
+section.color-options-two {
+	color: white;
+	background: #F07818;
+}
+
+section.color-options-two a {
+	color: #5E412F;
+}
+
+
+
+
+
+/* Index page */
+
+.tree {
+	width: 300px;
+}
+
+.circle {
+	width: 80%;
+	height: 80%;
+	margin: auto;
+	margin-bottom: 40px;
+	text-align: center;
+	border-radius: 50%;
+	padding: 10%;
+	color: #5E412F;
+	background: white;;
+}
+
+.circle a, .circle a:hover, .circle a:focus, .circle a:active {
+	color: #F07818 !important;
+	font-weight: bold;
+}
+
+/* Magic fluid rows */
+.clear-columns .col-lg-4:nth-child(3n+1){
+	clear: left;
+	margin-left: 0;
+}
+
+/* Alternating color divs! */
+.clear-columns .col-lg-4:nth-child(2n+1) .project{
+	background: #78C0A8;
+}
+
+.project {
+	/*border:solid 10px #78C0A8;*/
+	border-radius:20px;
+	background: #F07818;
+	padding: 10px;
+	color: white;
+}
+
+.project h4 a, .tag a {
+	color:white;
+	text-decoration: none;
+}
+
+.tag {
+	font-size: .8em;
+	background: white;
+	display: inline-block;
+	border-radius:10px;
+}
+
+.tag a {
+	color: #5E412F;
+	font-weight: bold;
+}
+
+/* Blog styling */
+
+.blog, .blog h1, .blog h2 {
+	font-family: "Gentium Book Basic",Georgia,serif;
+	text-transform: none;
+	color: #5E412F;
+	text-decoration: none;
+}
+
+.blog .date {
+	color: #78C0A8;
+}
+
+.blog-row {
+	padding-top: 15px;
+}
+
+.img-project {
+	display: inline;
+	moz-box-shadow: 0px 0px 0px 5px #5E412F; /* Firefox */
+	-webkit-box-shadow: 0px 0px 0px 5px #5E412F; /* Safari, Chrome */
+	box-shadow: 0px 0px 0px 5px #5E412F; /* CSS3 */
+
+}
+
+.img-project-wrapper {
+	padding: 20px;
+	text-align: center;
+}
+
+.img-project-title {
+	padding: 10px 15px 0px 15px;
+}
+
+/* Mobile only */
+@media only screen and (max-device-width: 480px) {
+	header .container {
+		padding-top: 40px;
+	}
+}
+
+.projectFilter {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.projectFilter a {
+	margin: 20px 10px 20px 10px;
+	font-weight: bold;
+}
+
+.projectContainer {
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.projectContainer div {
+	margin-bottom: 10px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+		text-align: center;
+}
+
+.image-container .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+}
+
+.image-container:hover .after {
+    display: block;
+    background: rgba(0, 0, 0, .75);
+		font-size: 22px;
+		font-weight: bold;
+}
+
+.textspan {
+		padding-left: 10px;
+		padding-right: 10px;
+		position: relative;
+	 	top: 40%;
+}
+
+#projectmisc {
+		margin-top: 50px;
+		margin-bottom: 50px;
+}
+
+.bc-row {
+	  margin-top: 50px;
+}
