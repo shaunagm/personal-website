@@ -1,11 +1,10 @@
 from mako.template import Template
 from mako.lookup import TemplateLookup
 
-# fullpath = "file:///home/shauna/Desktop/temp/shared/git/public-misc/shaunagm-newsite/site/"
-fullpath = "http://0.0.0.0:8000/"
+#fullpath = "http://0.0.0.0:8000/"
+fullpath = "http://www.shaunagm.net/"
 
 # Specify template directory
-
 lookup = TemplateLookup(["./templates"])
 
 # Generate index page, talks, publications, project index page
