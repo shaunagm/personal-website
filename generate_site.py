@@ -1,8 +1,8 @@
 from mako.template import Template
 from mako.lookup import TemplateLookup
 
-fullpath = "http://0.0.0.0:8000/site/"
-# fullpath = "http://www.shaunagm.net/"
+# fullpath = "http://0.0.0.0:8000/site/"
+fullpath = "http://www.shaunagm.net/"
 
 # Specify template directory
 lookup = TemplateLookup(["./templates"])
