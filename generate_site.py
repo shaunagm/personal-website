@@ -1,14 +1,14 @@
 from mako.template import Template
 from mako.lookup import TemplateLookup
 
-#fullpath = "http://0.0.0.0:8000/"
-fullpath = "http://www.shaunagm.net/"
+fullpath = "http://0.0.0.0:8000/site/"
+# fullpath = "http://www.shaunagm.net/"
 
 # Specify template directory
 lookup = TemplateLookup(["./templates"])
 
 # Generate index page, talks, publications, project index page
-for page in ["index.html", "talks.html", "publications.html", "projects.html", "cv.html"]:
+for page in ["index.html", "talks.html", "publications.html", "projects.html", "cv.html", "about.html"]:
     template = lookup.get_template("/" + page)
     with open("./site/" + page, "wb") as newFile:
         newFile.write(template.render(fullpath=fullpath))
