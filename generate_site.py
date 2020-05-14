@@ -16,7 +16,7 @@ for page in ["index.html", "talks.html", "publications.html", "projects.html", "
 # Generate individual project pages
 for page in ["bongardcards.html", "eureka.html", "littler.html", "open-government-boston.html",
     "open-science-collaboration-blog.html", "open-source-recommendation-letter.html",
-    "smalltalk.html", "welcomebot.html", "when-women-refuse.html"]:
+    "smalltalk.html", "welcomebot.html", "when-women-refuse.html", "interface.html"]:
     template = lookup.get_template("/projects/" + page)
     with open("./site/projects/" + page, "wb") as newFile:
         newFile.write(template.render(fullpath=fullpath))
