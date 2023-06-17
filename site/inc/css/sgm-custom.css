@@ -306,3 +306,15 @@ section.color-options-two a {
 .bc-row {
 	  margin-top: 50px;
 }
+
+body {
+	background-color: #5E412F;
+}
+
+#empty-footer {
+	height: 200px;
+}
+
+#splash-page-div {
+	padding-top: 180px;
+}
